@@ -2,23 +2,175 @@
 # It can be edited online at https://dandiarchive.org/dandiset/000970
 # and obtained from the dandiarchive.
 '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.7/context.json
+about: []
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
 assetsSummary:
-  numberOfBytes: 0
-  numberOfFiles: 0
+  approach: []
+  dataStandard:
+  - identifier: RRID:SCR_015242
+    name: Neurodata Without Borders (NWB)
+    schemaKey: StandardsType
+  measurementTechnique: []
+  numberOfBytes: 22933704
+  numberOfFiles: 46
+  numberOfSubjects: 46
   schemaKey: AssetsSummary
-citation: Duckworth, Jacob (2024) Long-wavelength traveling waves of vasomotion modulate
-  the perfusion of cortex (Version draft) [Data set]. DANDI archive. https://dandiarchive.org/dandiset/000970/draft
+  species:
+  - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10090
+    name: Mus musculus - House mouse
+    schemaKey: SpeciesType
+  variableMeasured: []
+citation: Broggini, Thomas; Duckworth, Jacob; Ji, Xiang; Liu, Rui; Xia, Xinyue; Machler,
+  Philipp; Shaked, Iftach; Munting, Leon; Iyengar, Satish; Kotlikoff, Michael; van
+  Veluw, Susanne; Vergassola, Massimo; Mishne, Gal; Kleinfeld, David (2024) Long-wavelength
+  traveling waves of vasomotion modulate the perfusion of cortex (Version draft) [Data
+  set]. DANDI archive. https://dandiarchive.org/dandiset/000970/draft
 contributor:
+- identifier: 0000-0002-3733-486X
+  includeInCitation: true
+  name: Broggini, Thomas
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:DataManager
+  - dcite:FormalAnalysis
+  schemaKey: Person
 - affiliation: []
   email: jakeduck97@gmail.com
+  identifier: 0009-0003-7447-9819
   includeInCitation: true
   name: Duckworth, Jacob
   roleName:
-  - dcite:ContactPerson
+  - dcite:Author
+  - dcite:DataCollector
+  - dcite:DataManager
+  - dcite:FormalAnalysis
   schemaKey: Person
+- identifier: 0000-0001-8595-6009
+  includeInCitation: true
+  name: Ji, Xiang
+  roleName:
+  - dcite:Author
+  - dcite:FormalAnalysis
+  schemaKey: Person
+- identifier: 0000-0002-3634-0344
+  includeInCitation: true
+  name: Liu, Rui
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  schemaKey: Person
+- includeInCitation: true
+  name: Xia, Xinyue
+  roleName:
+  - dcite:Author
+  - dcite:FormalAnalysis
+  schemaKey: Person
+- identifier: 0000-0001-7996-7684
+  includeInCitation: true
+  name: Machler, Philipp
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  schemaKey: Person
+- identifier: 0000-0002-5260-5912
+  includeInCitation: true
+  name: Shaked, Iftach
+  roleName:
+  - dcite:Author
+  - dcite:DataCollector
+  schemaKey: Person
+- identifier: 0000-0002-2352-4451
+  includeInCitation: true
+  name: Munting, Leon
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Iyengar, Satish
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Kotlikoff, Michael
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-7957-8643
+  includeInCitation: true
+  name: van Veluw, Susanne
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-7212-8244
+  includeInCitation: true
+  name: Vergassola, Massimo
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- identifier: 0000-0002-5287-3626
+  includeInCitation: true
+  name: Mishne, Gal
+  roleName:
+  - dcite:Author
+  schemaKey: Person
+- includeInCitation: true
+  name: Kleinfeld, David
+  roleName:
+  - dcite:Author
+  - dcite:Conceptualization
+  - dcite:ContactPerson
+  - dcite:FundingAcquisition
+  schemaKey: Person
+- includeInCitation: false
+  name: University of California, San Diego
+  roleName:
+  - dcite:Affiliation
+  schemaKey: Organization
+- awardNumber: R01 EB026936
+  includeInCitation: false
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: U24 EB028942
+  includeInCitation: false
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01 MH111438
+  includeInCitation: false
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R35 NS097265
+  includeInCitation: false
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: R01 NS108472
+  includeInCitation: false
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: U19 NS123717
+  includeInCitation: false
+  name: National Institute of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+- awardNumber: CCF-2217058
+  includeInCitation: false
+  name: National Science Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
 dateCreated: '2024-04-25T16:26:56.547584+00:00'
 description: Brain arterioles are active, multi-cellular complexes whose diameters
   oscillate at ~ 0.1 Hz. We assess the physiological impact and spatiotemporal dynamics
@@ -34,15 +186,21 @@ description: Brain arterioles are active, multi-cellular complexes whose diamete
   traveling waves in either direction along both pial and penetrating arterioles.
   This implies that waves along penetrating arterioles can mix, but not directionally
   transport, interstitial fluids.
+ethicsApproval: []
 id: DANDI:000970/draft
 identifier: DANDI:000970
+keywords: []
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000970/versions/draft/assets/
 name: Long-wavelength traveling waves of vasomotion modulate the perfusion of cortex
+protocol: []
+relatedResource: []
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.7
+studyTarget: []
 url: https://dandiarchive.org/dandiset/000970/draft
 version: draft
+wasGeneratedBy: []
